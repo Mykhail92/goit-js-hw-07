@@ -39,6 +39,7 @@ function onClick(event) {
   refsGallery.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       instance.close();
+      refsGallery.removeEventListener("keydown", event);
     }
   });
 }
